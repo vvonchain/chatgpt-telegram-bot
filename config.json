@@ -1,0 +1,18 @@
+{ 
+    "openai_api_key": "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",
+    "telegram_bot_token": "6262345183:AAFJ7xjVWWLqmAL32xZWK4Mj3FxqT3EDXcw",
+    "allow_all_users": false,
+    "allowed_users": [ 
+        "360263550", 
+        "373824504"
+    ], 
+    "enable_voice": true,   
+    "wait_time": 600,   
+    "enable_dalle": true,   
+    "super_users": [ 
+        "<SUPER_USER_ID_1>",    
+        "<SUPER_USER_ID_2>"
+    ], 
+    "image_generation_limit_per_day": 5,     
+    "enable_inline": false
+}
