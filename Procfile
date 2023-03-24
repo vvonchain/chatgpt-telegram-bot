@@ -1,1 +1,1 @@
-web:bash ./bin/start_bot.sh 
+web:bash ./bin/restart_bot.sh 
