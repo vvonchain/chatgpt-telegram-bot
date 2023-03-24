@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt
 # Copy the rest of the code
 COPY . .
 
-CMD ["sh", "bin/start_bot.sh"]
+CMD ["sh", "bin/restart_bot.sh"]
 
