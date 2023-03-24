@@ -87,16 +87,16 @@ class AccessManager:
                 json.dump(self.user_chat_usage_dict, f)
 
     # only check user in allowed_list or not
-    def check_user_allowed(self, userid):
-        # before check, update config
-        with open("config.json") as f:
-            config_dict = json.load(f)
+    # def check_user_allowed(self, userid):
+    #     # before check, update config
+    #     with open("config.json") as f:
+    #         config_dict = json.load(f)
 
-        if config_dict["allow_all_users"] or (userid in config_dict["allowed_users"]):
-            return (True, "")
-        else:
-            # print("sorry at unallowed chat.")
-            return (False, "Sorry, you are not allowed to use this bot. Contact the bot owner for more information.")
+    #     if config_dict["allow_all_users"] or (userid in config_dict["allowed_users"]):
+    #         return (True, "")
+    #     else:
+    #         # print("sorry at unallowed chat.")
+    #         return (False, "Sorry, you are not allowed to use this bot. Contact the bot owner for more information.")
 
     # check user in allowed_list or not & check image limit
     def check_image_generation_allowed(self, userid, num):
@@ -125,7 +125,7 @@ class AccessManager:
 
 if __name__ == "__main__":
     access_manager = AccessManager()
-    access_manager.check_user_allowed("1234567")
+    # access_manager.check_user_allowed("1234567")
     access_manager.check_image_generation_allowed("1234567", 1)
     # access_manager.update_usage_info("8423190", 2, "image")
     access_manager.check_image_generation_allowed("8423190", 1)
